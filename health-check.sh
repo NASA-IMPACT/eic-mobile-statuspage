@@ -43,6 +43,7 @@ do
   for i in 1 2 3 4; 
   do
     response=$(curl --write-out '%{http_code}' --silent --output /dev/null $url)
+    echo $response
     if [[ "$key" == "gis" ]]; then
       title=$(curl -H "referer: $REFERER" -H "X-Esri-Authorization: Bearer $GIS_TOKEN" -s $url)
       if [[ "$title" =~ [eE]rror ]]; then
