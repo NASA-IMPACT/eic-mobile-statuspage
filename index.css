@@ -120,10 +120,16 @@ footer a {
   align-items: center;
   justify-content: center;
 }
+.logo-span {
+  width: 25%;
+  background-color: #181818;
+}
 
 .logo {
   display: flex;
   align-items: left;
+  padding: 30px;
+
 }
 .headline span {
   background-color: #f5f6f8;
